@@ -1,0 +1,445 @@
+<body>
+    <div class="preferences-container">
+        <div class="preferences-header">
+            <div class="title-container">
+                <div class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="55" viewBox="0 -960 960 960" width="55">
+                        <path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/>
+                    </svg>
+                </div>
+                <p class="title">Settings menu</p>
+            </div>
+        </div>
+        <div class="preferences-navbar">
+            <div data-target="Hud" class="preferences-navbar-item active">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75"> <!-- Use grey color -->
+                        <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/>
+                    </svg>
+                </div>
+                <p>HUD</p>
+            </div>
+            <div data-target="Phone" class="preferences-navbar-item">
+                <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75">
+                    <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/>
+                </svg>
+                </div>
+                <p>Phone</p></div>
+            <div data-target="Voice" class="preferences-navbar-item">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75">
+                        <path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/>
+                    </svg>
+                </div>
+                <p>Voice</p></div>
+            <div data-target="EmoteBinds" class="preferences-navbar-item">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75">
+                        <path d="M360-80v-529q-91-24-145.5-100.5T160-880h80q0 83 53.5 141.5T430-680h100q30 0 56 11t47 32l181 181-56 56-158-158v478h-80v-240h-80v240h-80Zm120-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"/>
+                    </svg>
+                </div>
+                <p>Emote Binds</p></div>
+        </div>
+
+        <div class="preferences-pages">
+            <div class="preferences-pages-button">
+                <div class="ui-button success undefined mdc-ripple-surface mdc-ripple-upgraded">
+                    Save
+                </div>
+            </div>
+
+            <div class="preferences-pages-page Hud">
+                <div class="preferences-title">Status</div>
+                <div class="preferences-flex column">
+                    <!-- NEW -->
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="show-health" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Health</span>
+                            </label>
+                        </div>
+                        <div id="health-value" class="textfield-component-container undefined">
+                            <p class="textfield-title">Hide when more than... (100 = never hide)</p>  
+                            <input style="" placeholder="" type="number"> 
+                            <div class="textfield-underline"></div> 
+                            <p class="textfield-sub"></p>
+                        </div>
+                    </div>
+
+                    <!-- NEW -->
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="show-armor" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Armor</span>
+                            </label>
+                        </div>
+                        <div id="armor-value" class="textfield-component-container undefined">
+                            <p class="textfield-title">Hide when more than... (100 = never hide)</p>  
+                            <input style="" placeholder="" type="number"> 
+                            <div class="textfield-underline"></div> 
+                            <p class="textfield-sub"></p>
+                        </div>
+                    </div>
+
+                    <!-- NEW -->
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="show-food" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Food</span>
+                            </label>
+                        </div>
+                        <div id="food-value" class="textfield-component-container undefined">
+                            <p class="textfield-title">Hide when more than... (100 = never hide)</p>  
+                            <input style="" placeholder="" type="number"> 
+                            <div class="textfield-underline"></div> 
+                            <p class="textfield-sub"></p>
+                        </div>
+                    </div>
+
+                    <!-- NEW -->
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="show-water" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Water</span>
+                            </label>
+                        </div>
+                        <div id="water-value" class="textfield-component-container undefined">
+                            <p class="textfield-title">Hide when more than... (100 = never hide)</p>  
+                            <input style="" placeholder="" type="number"> 
+                            <div class="textfield-underline"></div> 
+                            <p class="textfield-sub"></p>
+                        </div>
+                    </div>
+
+                    <!-- NEW -->
+                    <div style="display: flex; justify-content: space-between;">
+                        <div id="show-stress" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                        </svg>                             
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Stress</span>
+                            </label>
+                        </div>
+                        <div id="show-oxygen" class="ui-checkbox-container">
+                            <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                                <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                    <span class="ui-checkbox-label">
+                                        <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                        <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                    </span>
+                                </span>
+                                <span class="ui-checkbox-text">Show Oxygen</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Minimap</div>
+                <div class="preferences-flex">
+                    <div id="minimap-outline" class="ui-checkbox-container">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Show Minimap Outline</span>
+                        </label>
+                    </div>
+                    <!-- NEW -->
+                    <div id="waypoint-distance" class="ui-checkbox-container">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Show Waypoint Distance</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="preferences-title">Compass</div>
+                <div class="preferences-flex column">
+                    <!-- NEW -->
+                    <div id="compass-enabled" class="ui-checkbox-container">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Show Compass</span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Black Bars</div>
+                <div class="preferences-flex column">
+                    <!-- NEW -->
+                    <div id="blackbars-enabled" class="ui-checkbox-container">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root " aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    </svg>                                       
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Enabled</span>
+                        </label>
+                    </div>
+                    <div id="blackbars-percentage" class="textfield-component-container undefined">
+                        <p class="textfield-title">Percentage of screen</p>  
+                        <i class="fas fa-mask"></i>
+                        <input style="" placeholder="" type="number"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Crosshair</div>
+                <div class="preferences-flex column">
+                    <!-- NEW -->
+                    <div id="crosshair-enabled" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Enabled</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preferences-pages-page Phone">
+                <div class="preferences-title">Misc</div>
+                <div class="preferences-flex column">
+                    <div id="phone-brand" class="textfield-component-container undefined">
+                        <p class="textfield-title">Brand</p>
+                        <i class="fas fa-fas fa-caret-down right"></i>
+                        <input style="user-select: none;" placeholder="" type="text" readonly> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="phone-background" class="textfield-component-container undefined">
+                        <p class="textfield-title">Background URL (1:2.2 res)</p>
+                        <i class="fas fa-images"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Notifications</div>
+                <div class="preferences-flex column">
+                    <div id="phone-notifications-sms" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Receive SMS</span>
+                        </label>
+                    </div>
+                    <div id="phone-notifications-tweet" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">New Tweet</span>
+                        </label>
+                    </div>
+                    <div id="phone-notifications-email" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Receive Email</span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Images</div>
+                <div class="preferences-flex column">
+                    <div id="phone-embedded-images" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Embedded Images</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preferences-pages-page Voice">
+                <div class="preferences-title">Reset</div>
+                <div class="preferences-flex column">
+                    <div class="ui-button warning undefined mdc-ripple-surface mdc-ripple-upgraded preferences-reset-mumble">Restart Mumble</div>
+                </div>
+                <hr>
+                <div class="preferences-title">Misc</div>
+                <div class="preferences-flex column">
+                    <div id="radio-clicks-out" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Radio Clicks (Out)</span>
+                        </label>
+                    </div>
+                    <div id="radio-clicks-in" class="ui-checkbox-container ">
+                        <label class="ui-checkbox" for="" style="width: auto; max-width: max-content;">
+                            <span class="ui-checkbox-root ui-checkbox-active" aria-disabled="false">
+                                <span class="ui-checkbox-label">
+                                    <input type="checkbox" class="ui-checkbox-input" data-indeterminate="false" value="">
+                                    <svg class="ui-checkbox-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>                                
+                                </span>
+                            </span>
+                            <span class="ui-checkbox-text">Radio Clicks (In)</span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="preferences-title">Volume</div>
+                <br>
+                <div class="preferences-flex column">
+                    <span class="preferences-slider-name">Phone Volume</span>
+                    <div id="phone-volume" class="ui-slider-container">
+                        <div class="ui-slider-icon ui-slider-icon-left"><i class="fas fa-volume-down"></i></div>
+                        <input type="range" class="ui-slider" min="10" max="100" value="50">
+                        <div class="ui-slider-icon ui-slider-icon-right"><i class="fas fa-volume-up"></i></div>
+                    </div>
+                    <span class="preferences-slider-name">Radio Volume</span>
+                    <div id="radio-volume" class="ui-slider-container">
+                        <div class="ui-slider-icon ui-slider-icon-left"><i class="fas fa-volume-down"></i></div>
+                        <input type="range" class="ui-slider" min="10" max="100" value="50">
+                        <div class="ui-slider-icon ui-slider-icon-right"><i class="fas fa-volume-up"></i></div>
+                    </div>
+                    <span class="preferences-slider-name">Radio Click Volume</span>
+                    <div id="radio-click-volume" class="ui-slider-container">
+                        <div class="ui-slider-icon ui-slider-icon-left"><i class="fas fa-volume-down"></i></div>
+                        <input type="range" class="ui-slider" min="10" max="100" value="50">
+                        <div class="ui-slider-icon ui-slider-icon-right"><i class="fas fa-volume-up"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preferences-pages-page EmoteBinds">
+                <div class="preferences-title">Emote Binds (emote name only)</div>
+                <div class="preferences-flex column">
+
+                    <div id="emotebinds-f2" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F2)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f3" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F3)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f5" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F5)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f6" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F6)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f7" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F7)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f9" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F9)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f10" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F10)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                    <div id="emotebinds-f11" class="textfield-component-container undefined">
+                        <p class="textfield-title">Command (F11)</p>  
+                        <i class="fas fa-terminal"></i>
+                        <input style="" placeholder="" type="text"> 
+                        <div class="textfield-underline"></div> 
+                        <p class="textfield-sub"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
